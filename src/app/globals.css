@@ -1,26 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html,
+body {
+  background: black;
+  color: white;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.noto {
+  font-family: "Noto Serif", serif;
+}
+
+.italiana {
+  font-family: "Italiana", sans-serif;
+}
+
+.italianno {
+  font-family: "Italianno", cursive;
+}
+
+.hanuman {
+  font-family: "Hanuman", serif;
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+}
+
+.inika {
+  font-family: "Inika", serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.dmsans {
+  font-family: "DM Sans", sans-serif;
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #767676;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2424247a;
+    /* Darker thumb */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #55555574;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.gradbgcolor {
+  background: linear-gradient(89.95deg, #FFFFFF 44.28%, #DC9442 99.95%);
+}
+
+.footerbg {
+  background: linear-gradient(178.37deg, rgba(234, 104, 36, 0) 8.55%, rgba(221, 150, 69, 0.41) 85.48%);
+}
+
+.paragrad {
+  background: linear-gradient(90deg, #FFFFFF 0%, #EA6824 100%);
+}
+
+.cardgrad {
+  background: linear-gradient(180deg, #FFEEE6 0%, #C6C9CA 100%);
+}
+
+.gradhr {
+  height: 5px;
+  background-image: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+}
+
+.btn-shad {
+  box-shadow: 0px 4px 40px 0px #20768B;
+}
+
+@layer utilities {
+  .gradient-border {
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #EA6824 0%, #263238 100%);
+    border-image-slice: 1;
+  }
 }
