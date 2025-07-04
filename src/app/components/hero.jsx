@@ -41,10 +41,10 @@ const hero = () => {
 								initial={{ y: 700 }}
 								animate={{ y: 0 }}
 								transition={{ duration: 1 }}
-								className=" text-black flex absolute top-[22%] left-[13%] md:left-[20%] lg:left-[40%] z-10"
+								className=" text-black flex absolute top-[22%] md:top-[32%] lg:top-[22%] left-[13%] md:left-[20%] lg:left-[40%] z-10"
 								style={{ backgroundImage: "url('/images/bg.jpg')" }}
 							>
-								<div className="bg-[#11171D] p-3 w-[75vw] md:w-[55vw] lg:w-[25vw] h-[95vw] md:h-[75vw] lg:h-[30vw] flex flex-col justify-between border-t border-r border-[#26546a]">
+								<div className="bg-[#11171D] p-3 w-[75vw] md:w-[55vw] lg:w-[25vw] h-[95vw] md:h-[50vw] lg:h-[30vw] flex flex-col justify-between border-t border-r border-[#26546a]">
 									<div className='flex justify-between text-[14px] md:text-[0.7vw] leading-[10px] md:leading-[0.7vw] font-semibold text-gray-500'>
 										<div>Hidden Truths of the Gods</div>
 										<div>Untold Stories</div>
